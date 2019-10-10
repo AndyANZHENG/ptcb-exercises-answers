@@ -1,0 +1,2 @@
+some new changes in the file
+some new changes that is not being tracked/staged

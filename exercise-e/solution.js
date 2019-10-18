@@ -1,5 +1,5 @@
-for (let i = 1; i <= 30; i++) {
-  if (i % 15 === 0) {
+for (var i = 1; i < 31; i = i + 1) {
+  if (i % 3 === 0 && i % 5 === 0) {
     console.log('Hong Kong');
   } else if (i % 3 === 0) {
     console.log('Hong');

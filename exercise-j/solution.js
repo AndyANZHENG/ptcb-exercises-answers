@@ -1,7 +1,7 @@
 // incorrect, but why?
 function deleteAllChildById(id) {
   var element = document.getElementById(id);
-  var allChild = element.childNodes;
+  var allChild = element.children;
   console.log(allChild);
   for (var i = 0; i < allChild.length; i++) {
     element.removeChild(allChild[i]);

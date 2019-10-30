@@ -7,16 +7,27 @@
     <title>demo</title>
   </head>
   <body>
+    <h1 id="title">this is a title</h1>
     <p>some</p>
     <p>random</p>
     <p>para</p>
     <p>tags</p>
     <p>here</p>
     <script>
+      var title = document.getElementById('title');
+      // title.onclick = function() {
+      //   console.log('title was clicked'); // every time the user clicks on title an alert will pop up
+      // };
+
+      // another option is eventListeners
+      title.addEventListener('mouseover', function() {
+        console.log('I was hovered');
+      });
+
       var para = document.getElementsByTagName('p');
       for (var i = 0; i < para.length; i++) {
         para[i].addEventListener('click', function(e) {
-          console.log('I was clicked' + e.target.innerText);
+          console.log('I was clicked ' + e.target.innerText);
         });
       }
     </script>

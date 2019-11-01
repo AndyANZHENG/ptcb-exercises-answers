@@ -30,5 +30,8 @@ for (var i = 0; i < icons.length; i++) {
     e.target.style.transform = 'scale(1.4)';
   });
   // attatch a mouseleave event listener to the element
-  // decrease size to normal
+  icons[i].addEventListener('mouseleave', function(e) {
+    // decrease size to normal
+    e.target.style.transform = 'scale(1)';
+  });
 }
